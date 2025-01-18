@@ -18,7 +18,7 @@ async function fetchRelatedWords(word) {
             'Authorization': `Bearer ${API_KEY}`
         },
         body: JSON.stringify({
-            model: 'gpt-4',
+            model: 'gpt-4o-mini',
             messages: [
                 {   role: 'system',
                     content: '日本語で回答してください.',
