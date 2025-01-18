@@ -7,7 +7,7 @@ const centralWordInput = document.getElementById('central-word');
 const cells = document.querySelectorAll('.mandala-chart .cell');
 
 // OpenAI APIキー
-const API_KEY = ''; // APIキーを削除
+const API_KEY = process.env.API_KEY; // 環境変数からAPIキーを取得
 
 // 関連ワードを取得する関数
 async function fetchRelatedWords(word) {
